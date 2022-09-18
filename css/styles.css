@@ -1,5 +1,25 @@
+*{
+    font-family: 'Noto Serif', serif;
+}
+
+h1, h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+a{
+    text-decoration:wavy;
+    color: white;
+}
+
+li{
+    list-style: none;
+}
+
 .header{
-    background-color: black;
+    background-color: #000000;
     max-height: 100%;
 }
 
@@ -41,3 +61,75 @@
         object-fit: contain;
     }
 }
+
+/* BODY CELULAR */
+section.body-index{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "combos"
+    "productos"
+    "conocimientos";
+}
+
+/* BODY ESCRITORIO*/
+@media(min-width:576px){
+section.body-index{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 50%;
+    grid-template-areas: 
+    "combos productos"
+    "combos conocimientos";
+}
+}
+
+.categoria ul li a {
+    text-decoration: overline;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;  
+}
+
+.body{
+    background-color: #5d5d63;
+}
+
+.combos{
+    grid-area: combos;
+}
+
+.conocimientos{
+    grid-area: conocimientos;
+}
+
+.productos{
+    grid-area: productos;
+}
+
+.body-index a img{
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+img.img-thumbnail{
+    border: #000000 2px solid;
+    padding: 0%;
+}
+
+.categoria ul li {
+    margin-right:px;
+}
+
+/* HEADER */
+footer{
+    background-color: black;
+}
+
