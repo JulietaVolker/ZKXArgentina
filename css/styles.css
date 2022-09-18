@@ -92,7 +92,7 @@ section.body-index{
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    max-width: 100%;  
+    max-width: 95%;  
 }
 
 .body{
@@ -127,8 +127,13 @@ img.img-thumbnail{
 .categoria ul li {
     margin-right:px;
 }
+/* PRODUCTOS */
 
-/* HEADER */
+ h2.card-title{
+    color: #000000;
+ }
+
+/* Footer */
 footer{
     background-color: black;
 }
