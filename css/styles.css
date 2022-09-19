@@ -2,8 +2,15 @@
     font-family: 'Noto Serif', serif;
 }
 
-h1, h2{
+h1{
     font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+h2{
+    font-size: 1.25rem;
     font-weight: bold;
     color: #ffffff;
     margin-bottom: 4px;
@@ -12,6 +19,8 @@ h1, h2{
 a{
     text-decoration:wavy;
     color: white;
+    transition-property: all 4s;
+    transition-duration: 500ms;
 }
 
 li{
@@ -124,16 +133,41 @@ img.img-thumbnail{
     padding: 0%;
 }
 
+.body ul li a img:hover{
+    transition-property: all 4s;
+    transition-duration: 500ms;
+    transform: rotate3d(1, 1, 0, 20deg)
+}
+
 /* PRODUCTOS */
 
  h2.card-title{
     color: #000000;
  }
 
+ .productos-card  img:hover{
+    transition-property: all 4s;
+    transition-duration: 500ms;
+    transform: rotate3d(1, 1, 0, 20deg);
+ }
+
+.card-text a:hover{
+    background-color: lightskyblue;
+    border-radius: 10px;
+    transition-property: all 4s;
+    transition-duration: 500ms;
+
+}
+
+ .categorias-lista ul li a:hover{
+    background-color: lightskyblue;
+ }
+
  /* SOBRE NOSOTROS */
 .body-sb__inf img{
     object-fit: cover;
 }
+
 
 /* Footer */
 footer{
